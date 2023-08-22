@@ -62,17 +62,17 @@ function onClick (update) {
 	button.style.left = `${posX}%`;
 	button.style.top = `${posY}%`;
 	if (update === false) return;
-	RGBGen();
+	// RGBGen();
 	updatePoint();
 }
 
-function RGBGen () {
-	const r = parseInt(Math.random() * 255);
-	const g = parseInt(Math.random() * 255);
-	const b = parseInt(Math.random() * 255);
-	const rgb = [r, g, b].join(', ');
-	document.body.style.backgroundColor = `rgb(${rgb})`;
-}
+// function RGBGen () {
+// 	const r = parseInt(Math.random() * 255);
+// 	const g = parseInt(Math.random() * 255);
+// 	const b = parseInt(Math.random() * 255);
+// 	const rgb = [r, g, b].join(', ');
+// 	document.body.style.backgroundColor = `rgb(${rgb})`;
+// }
 
 let point = -1;
 function updatePoint () {
@@ -82,4 +82,4 @@ function updatePoint () {
 }
 
 onClick();
-RGBGen();
+// RGBGen();
